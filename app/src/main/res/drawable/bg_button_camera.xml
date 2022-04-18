@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/green_700" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ic_capture_bg" />
+</selector>
