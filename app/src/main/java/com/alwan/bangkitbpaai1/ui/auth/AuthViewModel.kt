@@ -19,7 +19,7 @@ class AuthViewModel(private val pref: UserPreferences) : ViewModel() {
     private val _authInfo = MutableLiveData<Resource<String>>()
     val authInfo: LiveData<Resource<String>> = _authInfo
 
-    fun login(email: String?, password: String?) {
+    fun login(email: String, password: String) {
         _authInfo.postValue(Resource.Loading())
         val client = RetrofitConfig.apiInstance.login(LoginRequest(email, password))
 
@@ -50,7 +50,7 @@ class AuthViewModel(private val pref: UserPreferences) : ViewModel() {
     }
 
 
-    fun register(name: String?, email: String?, password: String?) {
+    fun register(name: String, email: String, password: String) {
         _authInfo.postValue(Resource.Loading())
         val client = RetrofitConfig.apiInstance.register(RegisterRequest(name, email, password))
 

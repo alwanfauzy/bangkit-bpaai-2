@@ -21,7 +21,6 @@ class CameraActivity : AppCompatActivity(), View.OnClickListener {
     private val binding get() = _binding!!
     private var imageCapture: ImageCapture? = null
     private var cameraSelector: CameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = ActivityCameraBinding.inflate(layoutInflater)
@@ -98,12 +97,14 @@ class CameraActivity : AppCompatActivity(), View.OnClickListener {
                 }
 
                 override fun onImageSaved(output: ImageCapture.OutputFileResults) {
-                    val intent = Intent()
-                    intent.putExtra("picture", photoFile)
-                    intent.putExtra(
-                        "isBackCamera",
-                        cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA
-                    )
+                    val intent = Intent().apply {
+                        putExtra("picture", photoFile)
+                        putExtra(
+                            "isBackCamera",
+                            cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA
+                        )
+                    }
+
                     setResult(AddStoryActivity.CAMERA_X_RESULT, intent)
                     finish()
                 }
