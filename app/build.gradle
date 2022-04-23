@@ -9,7 +9,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.alwan.bangkitbpaai1"
+        applicationId "com.alwan.bangkitbpaai2"
         minSdk 21
         targetSdk 32
         versionCode 1

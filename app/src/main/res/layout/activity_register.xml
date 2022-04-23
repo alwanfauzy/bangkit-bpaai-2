@@ -56,7 +56,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <com.alwan.bangkitbpaai1.customview.MyEditText
+    <com.alwan.bangkitbpaai2.customview.MyEditText
         android:id="@+id/edit_name_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <com.alwan.bangkitbpaai1.customview.MyEditText
+    <com.alwan.bangkitbpaai2.customview.MyEditText
         android:id="@+id/edit_email_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edit_name_register"
         custom:email="true" />
 
-    <com.alwan.bangkitbpaai1.customview.MyEditText
+    <com.alwan.bangkitbpaai2.customview.MyEditText
         android:id="@+id/edit_password_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

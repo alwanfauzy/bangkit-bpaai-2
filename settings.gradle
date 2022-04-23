@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 
     }
 }
-rootProject.name = "Bangkit BPAAI 1"
+rootProject.name = "Bangkit BPAAI 2"
 include ':app'

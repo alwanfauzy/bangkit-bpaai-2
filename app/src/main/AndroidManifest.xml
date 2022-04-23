@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.alwan.bangkitbpaai1">
+    package="com.alwan.bangkitbpaai2">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,28 +14,28 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BangkitBPAAI1">
+        android:theme="@style/Theme.BangkitBPAAI">
 
         <activity
-            android:name=".ui.CameraActivity"
+            android:name="com.alwan.bangkitbpaai2.ui.CameraActivity"
             android:exported="false"
             android:theme="@style/CameraTheme" />
         <activity
-            android:name=".ui.addstory.AddStoryActivity"
+            android:name="com.alwan.bangkitbpaai2.ui.addstory.AddStoryActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.SettingActivity"
+            android:name="com.alwan.bangkitbpaai2.ui.SettingActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.auth.RegisterActivity"
+            android:name="com.alwan.bangkitbpaai2.ui.auth.RegisterActivity"
             android:exported="false"
             android:theme="@style/AuthTheme" />
         <activity
-            android:name=".ui.auth.LoginActivity"
+            android:name="com.alwan.bangkitbpaai2.ui.auth.LoginActivity"
             android:exported="false"
             android:theme="@style/AuthTheme" />
         <activity
-            android:name=".ui.SplashActivity"
+            android:name="com.alwan.bangkitbpaai2.ui.SplashActivity"
             android:exported="true"
             android:theme="@style/AuthTheme">
             <intent-filter>
@@ -45,14 +45,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.DetailActivity"
+            android:name="com.alwan.bangkitbpaai2.ui.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name="com.alwan.bangkitbpaai2.ui.main.MainActivity"
             android:exported="false" />
 
         <receiver
-            android:name=".widget.ImageStoryWidget"
+            android:name="com.alwan.bangkitbpaai2.widget.ImageStoryWidget"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -64,7 +64,7 @@
         </receiver>
 
         <service
-            android:name="com.alwan.bangkitbpaai1.widget.StackWidgetService"
+            android:name="com.alwan.bangkitbpaai2.widget.StackWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
     </application>
 
